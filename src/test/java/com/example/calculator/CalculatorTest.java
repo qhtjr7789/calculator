@@ -78,15 +78,15 @@ public class CalculatorTest {
     @Test
     public void Test_뺼셈계산() {
         Calculator cal = new Calculator();
-        int result = cal.subtract(10, 4);
+        int result = cal.subtract(20, 10);
 
-        assertEquals("두뺼셈의 차이는 1이어야함",6, result);
+        assertEquals("두뺼셈의 차이는 10이어야함",10, result);
     }
     @Test
     public void Test_곱셈계산() {
         Calculator cal = new Calculator();
-        int result = cal.multiply(5, 4);
-        assertEquals("두곱셈의 값은 20이어야함",20, result);
+        int result = cal.multiply(4, 4);
+        assertEquals("두곱셈의 값은 16이어야함",16, result);
 
         }
 }
