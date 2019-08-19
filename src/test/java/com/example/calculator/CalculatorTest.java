@@ -79,13 +79,14 @@ public class CalculatorTest {
     public void Test_뺼셈계산() {
         Calculator cal = new Calculator();
         int result = cal.subtract(10, 4);
-        assertEquals(6, result);
+
+        assertEquals("두뺼셈의 차이는 1이어야함",6, result);
     }
     @Test
     public void Test_곱셈계산() {
         Calculator cal = new Calculator();
         int result = cal.multiply(5, 4);
-        assertEquals(20, result);
+        assertEquals("두곱셈의 값은 20이어야함",20, result);
 
         }
 }
