@@ -2,6 +2,8 @@ package com.example.calculator;
 
 import org.junit.Test;
 
+import java.util.concurrent.Callable;
+
 import static junit.framework.TestCase.assertEquals;
 
 public class CalculatorTest {
@@ -73,5 +75,17 @@ public class CalculatorTest {
         double result = cal.divisionx(-10.0, -2.0);
         assertEquals(5.0, result);
     }
+    @Test
+    public void Test_뺼셈계산() {
+        Calculator cal = new Calculator();
+        int result = cal.subtract(10, 4);
+        assertEquals(6, result);
+    }
+    @Test
+    public void Test_곱셈계산() {
+        Calculator cal = new Calculator();
+        int result = cal.multiply(5, 4);
+        assertEquals(20, result);
 
+        }
 }
